@@ -9,9 +9,9 @@
     "test": "ng test",
     "test:chromium": "ng test --browsers=Chromium",
     "prepare": "husky install",
-    "build:app": "ng build testcicd --configuration=prodaction --base-href=/testcicd",
+    "build:app": "ng build --configuration production --base-href=/testcicd",
     "build:ci": "npm run build:app",
-    "test:app": "ng test testcicd --no-watch --browser=ChromeHeadlessCI",
+    "test:app": "ng test --no-watch --browser=ChromeHeadlessCI",
     "test:ci": "npm run test:app"
   },
   "private": true,
