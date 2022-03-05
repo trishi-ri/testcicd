@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "build:app": "ng build --configuration production --base-href=/testcicd",
     "build:ci": "npm run build:app",
-    "test:app": "ng test --no-watch --browser=ChromeHeadlessCI",
+    "test:app": "ng test --no-watch --browsers=ChromeHeadlessCI",
     "test:ci": "npm run test:app"
   },
   "private": true,
